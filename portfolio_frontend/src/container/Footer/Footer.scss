@@ -1,0 +1,185 @@
+// Footer.scss
+
+// Define variables
+$primaryColor: rgba(248, 248, 248, 0.907);
+$secondaryColor: rgb(102, 102, 102);
+$accentColor: rgb(255, 153, 0);
+
+// Footer styles
+.footer {
+  background-color: $primaryColor;
+//   color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 5px;
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $accentColor;
+
+    svg {
+      margin-left: 10px;
+      font-size: 24px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 16px;
+        svg{
+            margin-left: 0px;
+            
+        }
+    }
+  }
+}
+
+  .footer__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+    // margin-bottom: 20px;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+  }
+  .footer__cardbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.footer__card {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #f4d1f9;
+      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
+      @media screen and (min-width: 2000px) {
+        
+      }
+      @media screen and (max-width: 450px) {
+        
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        a{
+            font-size: 12px;
+        }
+      }
+    }
+
+    .footer__text {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          color: $accentColor;
+        }
+      }
+
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+.footer__input {
+      flex-basis: 100%;
+      margin-bottom: 10px;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #f4d1f9;
+        border-radius: 5px;
+        color: #000000;
+        background-color: transparent;
+        resize: none;
+        overflow-y: scroll;
+        font-style: normal;
+
+        &::placeholder {
+          color: rgba(4, 4, 4, 0.6);
+        }
+      }
+
+      textarea {
+        height: 120px;
+        
+      }
+    }
+
+    .footer__button {
+      padding: 10px 20px;
+      background-color: $accentColor;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($accentColor, 10%);
+      }
+    }
+  
+
+  .footer__message {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: $primaryColor;
+
+    h3 {
+      font-size: 18px;
+      color: $secondaryColor;
+    }
+  }
+
+
+// Apply background styles using class or ID
+.contact-bg {
+  background-color: $primaryColor;
+  color: #fff;
+}
+
+.footer__bg {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255),rgb(246, 206, 168), rgb(255, 255, 255));
+    color: #fff;
+}
+
+.footer__submit{
+    color: #605f60;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    @media screen and (max-width: 800px) {
+        margin-left: 5px;
+        font-size: 18px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 450px) {
+        font-size: 16x;
+    }
+}
